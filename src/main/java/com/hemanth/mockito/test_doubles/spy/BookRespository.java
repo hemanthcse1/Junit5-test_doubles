@@ -1,8 +1,7 @@
-package com.hemanth.mockito.test_doubles.fake;
+package com.hemanth.mockito.test_doubles.spy;
 
 import java.util.Collection;
 
 public interface BookRespository {
     void save(Book book);
-    Collection<Book> findAll();
 }
