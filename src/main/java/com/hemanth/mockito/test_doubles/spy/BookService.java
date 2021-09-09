@@ -1,4 +1,4 @@
-package com.hemanth.mockito.test_doubles.fake;
+package com.hemanth.mockito.test_doubles.spy;
 
 public class BookService {
 
