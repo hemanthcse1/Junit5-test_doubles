@@ -18,9 +18,11 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 @ExtendWith(MockitoExtension.class)
 public class AnnotationsTest {
 
+    // class under test mock
     @InjectMocks
     private BookService bookService;
 
+    // mocking external dependency class
     @Mock
     private BookRespository bookRespository;
 
