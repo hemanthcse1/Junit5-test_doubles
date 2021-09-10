@@ -9,10 +9,10 @@ public class BookService {
     }
 
     public void addBook(Book book){
+        if (book.getPrice() > 400){
+            return;
+        }
         bookRespository.save(book);
     }
 
-    public int findNumberOfBooks(){
-        return bookRespository.findAll().size();
-    }
 }
