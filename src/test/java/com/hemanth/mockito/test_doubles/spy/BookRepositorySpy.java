@@ -1,6 +1,8 @@
 package com.hemanth.mockito.test_doubles.spy;
 
-public class BookRepositorySpy implements BookRespository {
+
+public class BookRepositorySpy implements BookRespository{
+
     int saveCalled = 0;
     Book lastAddedBook = null;
 
@@ -8,6 +10,12 @@ public class BookRepositorySpy implements BookRespository {
     public void save(Book book) {
         saveCalled++;
         lastAddedBook = book;
+    }
+
+
+    @Override
+    public Collection<Book> findAll() {
+        return null;
     }
 
     public int timesCalled(){
