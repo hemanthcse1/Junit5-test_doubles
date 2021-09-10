@@ -12,12 +12,6 @@ public class BookRepositorySpy implements BookRespository{
         lastAddedBook = book;
     }
 
-
-    @Override
-    public Collection<Book> findAll() {
-        return null;
-    }
-
     public int timesCalled(){
         return saveCalled;
     }
